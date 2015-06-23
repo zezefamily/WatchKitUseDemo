@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="B71-El-UJD">
+            <objects>
+                <controller id="mvk-fd-eej">
+                    <items>
+                        <button width="1" alignment="left" title="Button" id="Xoz-AF-Ajn"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="185" y="327"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="C4W-1s-bzW">
+            <objects>
+                <glanceController id="rgP-5c-jHG">
+                    <items>
+                        <group alignment="left" id="Pc7-yV-lwZ"/>
+                        <group alignment="left" id="eSK-I1-MoD"/>
+                    </items>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="382" y="327"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="2TN-hm-SEd">
+            <objects>
+                <notificationController id="oku-7k-VOA">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="US3-2o-haM"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="7XM-yV-Me5"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="US3-2o-haM" id="UgA-RW-YUL"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="565" y="327"/>
+        </scene>
+    </scenes>
+</document>
