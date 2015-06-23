@@ -11,6 +11,7 @@
 
 @interface InterfaceController()
 
+@property (weak, nonatomic) IBOutlet WKInterfaceTimer *tmier;
 
 
 @end
@@ -23,7 +24,7 @@
 
     // Configure interface objects here.
     NSLog(@"superView == %@",self.superclass);
-
+    [self.tmier start];
     
 }
 

@@ -10,12 +10,32 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="amS-y1-5Ll">
+                        <button width="1" alignment="left" title="Push to VC" id="amS-y1-5Ll">
+                            <color key="titleColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="Zr5-x4-Lp0" kind="push" id="CPk-EO-Pkl"/>
                             </connections>
                         </button>
+                        <dateLabel alignment="left" id="hlg-Mk-RIC">
+                            <color key="textColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
+                        </dateLabel>
+                        <timer width="129" alignment="left" format="abbreviated" id="bZY-dt-Orx">
+                            <color key="textColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <calendarUnit key="units" month="YES" day="YES" hour="YES" minute="YES" second="YES" weekOfMonth="YES"/>
+                        </timer>
+                        <label width="135" alignment="left" text="WatchKit初体验" textAlignment="center" id="mAs-UW-aYT">
+                            <color key="textColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label width="136" alignment="left" text="Zezefamily" textAlignment="center" id="E71-VP-doj">
+                            <color key="textColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
                     </items>
+                    <connections>
+                        <outlet property="tmier" destination="bZY-dt-Orx" id="L6p-nC-2rk"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
@@ -25,8 +45,9 @@
             <objects>
                 <controller id="Zr5-x4-Lp0" customClass="NextController">
                     <items>
-                        <imageView width="80" height="76" alignment="left" image="IMG_0619" animationDuration="2" id="D0f-bw-h8p"/>
-                        <button width="44" alignment="left" title="Button" id="GtJ-ui-J08">
+                        <imageView width="109" height="107" alignment="left" image="IMG_0619" animationDuration="2" id="D0f-bw-h8p"/>
+                        <button width="135" alignment="left" title="Push to Table" id="GtJ-ui-J08">
+                            <color key="titleColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="jEd-Fz-BzR" kind="push" id="IUq-r0-Ctj"/>
                             </connections>
@@ -46,7 +67,9 @@
                                 <tableRow identifier="TEST" id="hVz-b5-lEO" customClass="RowController">
                                     <group key="rootItem" width="1" alignment="left" id="YTL-RD-HoV">
                                         <items>
-                                            <label width="117" height="34" alignment="left" text="Label" id="Eak-uG-dmD"/>
+                                            <label width="117" height="34" alignment="left" text="Label" id="Eak-uG-dmD">
+                                                <color key="textColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
                                         </items>
                                         <connections>
                                             <segue destination="LOu-gR-iTD" kind="push" id="OVa-U6-wY4"/>
@@ -69,9 +92,15 @@
         <!--Interface Controller-->
         <scene sceneID="Ekv-wN-A3n">
             <objects>
-                <controller id="LOu-gR-iTD"/>
+                <controller id="LOu-gR-iTD">
+                    <items>
+                        <label width="134" alignment="left" text="END" textAlignment="center" id="dCT-IN-35r">
+                            <color key="textColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="705" y="612"/>
+            <point key="canvasLocation" x="640" y="613"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
