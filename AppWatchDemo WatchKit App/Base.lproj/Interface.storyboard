@@ -21,7 +21,7 @@
                             <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
                             <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
                         </dateLabel>
-                        <timer width="129" alignment="left" format="abbreviated" id="bZY-dt-Orx">
+                        <timer width="129" alignment="left" format="short" id="bZY-dt-Orx">
                             <color key="textColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                             <calendarUnit key="units" month="YES" day="YES" hour="YES" minute="YES" second="YES" weekOfMonth="YES"/>
                         </timer>
@@ -32,8 +32,20 @@
                             <color key="textColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                         </label>
+                        <slider width="1" alignment="left" value="1" maximum="10" steps="10" id="Uhl-rR-Dq0">
+                            <color key="color" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </slider>
+                        <switch width="1" alignment="left" value="YES" id="kU6-Tf-Xey">
+                            <color key="titleColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.90980392160000001" green="0.36470588240000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="isStart:" destination="AgC-eL-Hgc" id="z5Z-in-Ng3"/>
+                            </connections>
+                        </switch>
                     </items>
                     <connections>
+                        <outlet property="mySwitch" destination="kU6-Tf-Xey" id="ZFp-6L-7Mj"/>
+                        <outlet property="slider" destination="Uhl-rR-Dq0" id="LLp-dA-Vbm"/>
                         <outlet property="tmier" destination="bZY-dt-Orx" id="L6p-nC-2rk"/>
                     </connections>
                 </controller>
